@@ -123,3 +123,13 @@ D:\CHashProjects\TaskFlow.API\TaskFlow.API\obj\Debug\net10.0\refint\TaskFlow.API
 D:\CHashProjects\TaskFlow.API\TaskFlow.API\obj\Debug\net10.0\TaskFlow.API.pdb
 D:\CHashProjects\TaskFlow.API\TaskFlow.API\obj\Debug\net10.0\TaskFlow.API.genruntimeconfig.cache
 D:\CHashProjects\TaskFlow.API\TaskFlow.API\obj\Debug\net10.0\ref\TaskFlow.API.dll
+D:\CHashProjects\TaskFlow.API\TaskFlow.API\bin\Debug\net10.0\BCrypt-Net-Next.dll
+D:\CHashProjects\TaskFlow.API\TaskFlow.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\CHashProjects\TaskFlow.API\TaskFlow.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+D:\CHashProjects\TaskFlow.API\TaskFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+D:\CHashProjects\TaskFlow.API\TaskFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CHashProjects\TaskFlow.API\TaskFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+D:\CHashProjects\TaskFlow.API\TaskFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+D:\CHashProjects\TaskFlow.API\TaskFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CHashProjects\TaskFlow.API\TaskFlow.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+D:\CHashProjects\TaskFlow.API\TaskFlow.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
