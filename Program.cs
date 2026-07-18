@@ -4,9 +4,11 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using TaskFlow.API.Data;
+using TaskFlow.API.Entities;
 using TaskFlow.API.Interfaces;
 using TaskFlow.API.Repositories;
 using TaskFlow.API.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -44,6 +46,7 @@ builder.Services.AddSwaggerGen(options =>
             }
         });
 });
+
 builder.Services.AddScoped<ProjectService>();
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
