@@ -1,11 +1,14 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Reflection;
 using System.Text;
 using TaskFlow.API.Data;
 using TaskFlow.API.Entities;
 using TaskFlow.API.Interfaces;
+using TaskFlow.API.Middleware;
 using TaskFlow.API.Repositories;
 using TaskFlow.API.Services;
 
@@ -46,8 +49,8 @@ builder.Services.AddSwaggerGen(options =>
             }
         });
 });
-
-builder.Services.AddScoped<ProjectService>();
+builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<IProjectService, ProjectService>();
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
 builder.Services.AddAuthentication(
@@ -78,6 +81,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseAuthentication();
 app.UseAuthorization();

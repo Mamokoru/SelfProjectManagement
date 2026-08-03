@@ -72,5 +72,10 @@ public class AuthController : ControllerBase
             token
         });
     }
+    [HttpGet("test-error")]
+    public IActionResult TestError()
+    {
+        throw new Exception("This is a test exception.");
+    }
 }
 

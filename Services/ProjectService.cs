@@ -4,7 +4,7 @@ using TaskFlow.API.Interfaces;
 
 namespace TaskFlow.API.Services;
 
-public class ProjectService
+public class ProjectService : IProjectService
 {
     private readonly IProjectRepository _repository;
 

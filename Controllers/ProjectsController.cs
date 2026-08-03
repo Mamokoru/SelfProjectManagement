@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TaskFlow.API.DTOs;
+using TaskFlow.API.Interfaces;
 using TaskFlow.API.Services;
 
 namespace TaskFlow.API.Controllers;
@@ -11,9 +12,9 @@ namespace TaskFlow.API.Controllers;
 [Route("api/projects")]
 public class ProjectsController : ControllerBase
 {
-    private readonly ProjectService _service;
+    private readonly IProjectService _service;
 
-    public ProjectsController(ProjectService service)
+    public ProjectsController(IProjectService service)
     {
         _service = service;
     }
