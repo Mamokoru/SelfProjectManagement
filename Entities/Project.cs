@@ -11,6 +11,6 @@ public class Project : BaseEntity
 
     public User User { get; set; } = null!;
 
-    public ICollection<TodoItem> Tasks { get; set; }
-    = new List<TodoItem>();
+    public ICollection<TaskItem> Tasks { get; set; }
+    = new List<TaskItem>();
 }
